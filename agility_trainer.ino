@@ -35,17 +35,18 @@ void setup() {
   pinMode(ir, INPUT);
 
   radio.begin();
-  radio.openWritingPipe(addresses[0]);
-  radio.openReadingPipe(1, addresses[1]);
+  radio.openWritingPipe(addresses[1]);
+  radio.openReadingPipe(1, addresses[0]);
   radio.setPALevel(RF24_PA_MIN);
   Serial.begin(9600);
 }
 
 void loop() {
   radio.startListening();
-  //while (!radio.available());
-  //radio.read(&data, sizeof(data));
-  
+  if(radio.available()){
+  radio.read(&data, sizeof(data));
+  }
+
   // current_time, or the millis() function, tracks how much time the arduino
   // has been turned on for, in milliseconds
   unsigned long current_time = millis();
@@ -53,12 +54,22 @@ void loop() {
   // initially, previous_time is 0, but we will make it equal to current_time at some
   // point in order to "restart" the timer --> timer = current_time - current_time = 0
   long timer = current_time - previous_time;
+  long timer2 = current_time - previous_time;
 
   // irValue is the value of the reading from the ir pin, and we also define the
   // red, green and blue values for the RGB LED
   irValue = analogRead(ir);
   RGB(rValue, gValue, bValue);
 
+  if(data == 11){ //change data value for each device
+      rValue = 255;
+      gValue = 0;
+      bValue = 0;
+      // 523 is the frequency in hertz that's being played in our buzzer
+      tone(buzzer, 523);
+  }
+
+  else{
   // if the distance value is within our threshold (the user's hand is close
   // enough to the sensor)
   if(irValue > 550){
@@ -80,7 +91,8 @@ void loop() {
       gValue = 0;
       bValue = 220;
     }
-  Serial.println(irValue);
+  }
+    Serial.println(data);
 }
 
 // this is a function to make it easier to choose the colors in the RGB LED.
