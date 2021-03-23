@@ -11,8 +11,11 @@
 #define b 6
 
 RF24 radio(10, 9);
-const byte addresses[][6] = {"00001", "00002"};
+const byte addresses[][6] = {"00001", "00002", "00003", "00004"};
 int data;
+int device_number = 2;
+int next_device;
+int previous_device;
 
 // define the initial values for our inputs and outputs
 int rValue = 0;
@@ -25,6 +28,8 @@ int sequence[] = {};
 
 // create the variables for timing the events
 long previous_time = 0;
+long previous_time2 = 0;
+long previous_time3 = 0;
 const long timeout = 1200;
 
 void setup() {
@@ -35,8 +40,11 @@ void setup() {
   pinMode(ir, INPUT);
 
   radio.begin();
-  radio.openWritingPipe(addresses[1]);
-  radio.openReadingPipe(1, addresses[0]);
+  radio.openWritingPipe(addresses[0]);
+  radio.openReadingPipe(1, addresses[1]);
+  //radio.openReadingPipe(2, addresses[1]);
+  //radio.openReadingPipe(3, addresses[2]);
+  //radio.openReadingPipe(4, addresses[3]);
   radio.setPALevel(RF24_PA_MIN);
   Serial.begin(9600);
 }
@@ -54,19 +62,28 @@ void loop() {
   // initially, previous_time is 0, but we will make it equal to current_time at some
   // point in order to "restart" the timer --> timer = current_time - current_time = 0
   long timer = current_time - previous_time;
-  long timer2 = current_time - previous_time;
+  long timer2 = current_time - previous_time2;
+  long timer3 = current_time - previous_time3;
 
   // irValue is the value of the reading from the ir pin, and we also define the
   // red, green and blue values for the RGB LED
   irValue = analogRead(ir);
   RGB(rValue, gValue, bValue);
 
-  if(data == 11){ //change data value for each device
+  if(data == 20 + device_number){ //change data value for each device
       rValue = 255;
       gValue = 0;
       bValue = 0;
       // 523 is the frequency in hertz that's being played in our buzzer
       tone(buzzer, 523);
+  }
+
+  if(data == 20 + device_number){ //change data value for each device
+     rValue = 255;
+     gValue = 0;
+     bValue = 0;
+     // 523 is the frequency in hertz that's being played in our buzzer
+     tone(buzzer, 523);
   }
 
   else{
@@ -82,6 +99,12 @@ void loop() {
       bValue = 0;
       // 523 is the frequency in hertz that's being played in our buzzer
       tone(buzzer, 523);
+      // "roll a die" to see which will be the next device
+      next_device = random(21, 24);
+      if(next_device != 20 + device_number){
+      previous_device = next_device;
+      data = next_device;
+      }
     }
   }
   // while the timer value is greater than our timeout value, do the follwing
@@ -90,6 +113,8 @@ void loop() {
       rValue = 120;
       gValue = 0;
       bValue = 220;
+      radio.stopListening();
+      radio.write(&data, sizeof(data));
     }
   }
     Serial.println(data);
