@@ -1,5 +1,4 @@
 #include <SPI.h>
-#include <nRF24L01.h>
 #include <RF24.h>
 
 // define the pins for our inputs and outputs
@@ -41,15 +40,16 @@ void setup() {
 
   radio.begin();
   radio.openWritingPipe(addresses[0]);
-  radio.openReadingPipe(1, addresses[1]);
-  //radio.openReadingPipe(2, addresses[1]);
-  //radio.openReadingPipe(3, addresses[2]);
-  //radio.openReadingPipe(4, addresses[3]);
+  //radio.openReadingPipe(1, addresses[1]);
+  radio.openReadingPipe(2, addresses[1]);
+  radio.openReadingPipe(3, addresses[2]);
+  radio.openReadingPipe(4, addresses[3]);
   radio.setPALevel(RF24_PA_MIN);
   Serial.begin(9600);
 }
 
 void loop() {
+  delay(5);
   radio.startListening();
   if(radio.available()){
   radio.read(&data, sizeof(data));
@@ -113,6 +113,7 @@ void loop() {
       rValue = 120;
       gValue = 0;
       bValue = 220;
+      delay(5);
       radio.stopListening();
       radio.write(&data, sizeof(data));
     }
