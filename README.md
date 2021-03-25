@@ -92,5 +92,5 @@ It is important to change the `device_number` to your device's number. For examp
 
 ### 4- Autonomous Random Selection
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/44078452/112412309-13b25180-8cfd-11eb-9256-f0600568e850.png" />
+  <img src="https://user-images.githubusercontent.com/44078452/112417217-d69e8d00-8d05-11eb-8c97-63810ac0e3c0.png" />
 </p>
