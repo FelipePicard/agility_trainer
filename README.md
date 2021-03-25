@@ -80,6 +80,10 @@ As of today, the circuit used for this project isn't optimized at all. For examp
 
 ## Operating Modes
 
+Each of the operating modes has an Arduino sketch. You can simply clone this repository and try the different codes.
+
+It is important to change the `device_number` to your device's number. For example: if you made 3 devices, name one of them as 1, the other one as 2 and another as 3. Before uploading the code, choose `device_number` according to the device you are programming.
+
 ### 1- Solo
 
 ### 2- Radio Controlled
@@ -87,3 +91,6 @@ As of today, the circuit used for this project isn't optimized at all. For examp
 ### 3- Randomly Generated Sequence
 
 ### 4- Autonomous Random Selection
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/44078452/112412309-13b25180-8cfd-11eb-9256-f0600568e850.png" />
+</p>
