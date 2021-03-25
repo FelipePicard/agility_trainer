@@ -103,7 +103,7 @@ The device randomly picks a color and waits until the suitable action is done by
   <img src="https://user-images.githubusercontent.com/44078452/112419179-b40e7300-8d09-11eb-8171-e15e9aec2ec9.gif" alt="animated" />
 </p>
 
-A coach or any other person has a remote and chooses the order in which the lights will shine and with which color.
+A coach or any other person has a remote and chooses the order in which the lights will shine and with which color. The repository for the remote can be found [here](https://github.com/FelipePicard/TkOvr-01), but I must say that it is still a work in progress.
 <br>
 <br>
 
