@@ -33,8 +33,7 @@ Each device is comprised of an [RF-NANO](https://www.embeddedcomputing.com/techn
 </p>
 
 
-_ yes, i made this using paint _
-_underscores_
+_yes, i made this using paint_
 
 
 ##### connections:
