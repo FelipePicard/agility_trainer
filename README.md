@@ -8,17 +8,17 @@
 
 ## Table of Contents
 
-- [Description](#Description)
-- [Working Principle](#Working-Principle)
-- [Construction](#Construction)
-  - [List of Components](#List-of-Components)
-  - [Schematic](#Schematic)
-  - [Connections](#Connections)
-- [Operating Modes](#Operating-Modes)
-  - [1- Solo](#1--Solo)
-  - [2- Radio Controlled](2--Radio-Controlled)
-  - [3- Randomly Generated Sequence](3--Randomly-Generated-Sequence)
-  - [4- Autonomous Random Selection](4--Autonomous-Random-Selection)
+- [Description](#description)
+- [Working Principle](#working-principle)
+- [Construction](#construction)
+  - [List of Components](#list-ofcComponents)
+  - [Schematic](#schematic)
+  - [Connections](#connections)
+- [Operating Modes](#operating-modes)
+  - [1- Solo](#1--solo)
+  - [2- Radio Controlled](2--radio-controlled)
+  - [3- Randomly Generated Sequence](3--randomly-generated-sequence)
+  - [4- Autonomous Random Selection](4--autonomous-random-selection)
 <br>
 <br>
 
@@ -119,6 +119,6 @@ One of the devices acts as a master while the other ones, as slaves. The master 
   <img src="https://user-images.githubusercontent.com/44078452/112417217-d69e8d00-8d05-11eb-8c97-63810ac0e3c0.png" />
 </p>
 
-Similarly to the Randomly Generated Sequence(#3--Randomly-Generated-Sequence), this mode also has a master and slaves, however, the master changes and is always the device which is active. Once the demanded action is completed, it chooses another device to be the master and the loop continues.
+Similarly to the [Randomly Generated Sequence](#3--randomly-generated-sequence), this mode also has a master and slaves, however, the master changes and is always the device which is active. Once the demanded action is completed, it chooses another device to be the master and the loop continues.
 
-This mode is functionally very similar to the Randomly Generated Sequence(#3--Randomly-Generated-Sequence)... Therefore, maybe it shouldn't even be implemented.
+This mode is functionally very similar to the [Randomly Generated Sequence](#3--randomly-generated-sequence)... Therefore, maybe it shouldn't even be implemented.
