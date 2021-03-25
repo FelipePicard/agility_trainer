@@ -90,9 +90,16 @@ Each of the operating modes has an Arduino sketch. You can simply clone this rep
 It is important to change the `device_number` to your device's number. For example: if you made 3 devices, name one of them as 1, the other one as 2 and another as 3. Before uploading the code, choose `device_number` according to the device you are programming.
 
 ### 1- Solo
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/44078452/112419098-8b867900-8d09-11eb-811f-66cbfe94d00e.gif" alt="animated" />
+</p>
+<br>
+<br>
 
 ### 2- Radio Controlled
-
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/44078452/112419179-b40e7300-8d09-11eb-8171-e15e9aec2ec9.gif" alt="animated" />
+</p>
 ### 3- Randomly Generated Sequence
 
 ### 4- Autonomous Random Selection
