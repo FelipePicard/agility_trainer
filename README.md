@@ -1,5 +1,6 @@
 # agility_trainer
 
+<br>
 <p align="center">
   <img src="https://user-images.githubusercontent.com/44078452/112398594-4ea78b80-8ce3-11eb-8e08-b5a89963784e.gif" alt="animated" />
 </p>
