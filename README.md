@@ -104,6 +104,8 @@ It is important to change the `device_number` to your device's number. For examp
 <br>
 
 ### 3- Randomly Generated Sequence
+<br>
+<br>
 
 ### 4- Autonomous Random Selection
 <p align="center">
