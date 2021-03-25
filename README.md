@@ -36,7 +36,7 @@ Each device is comprised of an [RF-NANO](https://www.embeddedcomputing.com/techn
 _yes, i made this using paint_
 
 
-##### connections:
+#### connections:
 - RGB LED
   - redPin - D3
   - greenPin - D5
