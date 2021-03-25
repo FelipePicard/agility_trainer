@@ -93,6 +93,8 @@ It is important to change the `device_number` to your device's number. For examp
 <p align="center">
   <img src="https://user-images.githubusercontent.com/44078452/112419098-8b867900-8d09-11eb-811f-66cbfe94d00e.gif" alt="animated" />
 </p>
+
+The device randomly picks a color and waits until the suitable action is done by the user. After that, another color is picked and the cycle goes on.
 <br>
 <br>
 
@@ -100,10 +102,15 @@ It is important to change the `device_number` to your device's number. For examp
 <p align="center">
   <img src="https://user-images.githubusercontent.com/44078452/112419179-b40e7300-8d09-11eb-8171-e15e9aec2ec9.gif" alt="animated" />
 </p>
+
+A coach or any other person has a remote and chooses the order in which the lights will shine and with which color.
 <br>
 <br>
 
 ### 3- Randomly Generated Sequence
+
+One of the devices acts as a master while the other ones, as slaves. The master generates a random sequence with the order and colors that will be picked and stores it in an array. After that, the master executes this sequence, telling the other devices when they should light up.
+
 <br>
 <br>
 
@@ -111,3 +118,7 @@ It is important to change the `device_number` to your device's number. For examp
 <p align="center">
   <img src="https://user-images.githubusercontent.com/44078452/112417217-d69e8d00-8d05-11eb-8c97-63810ac0e3c0.png" />
 </p>
+
+Similarly to the Randomly Generated Sequence(#3--Randomly-Generated-Sequence), this mode also has a master and slaves, however, the master changes and is always the device which is active. Once the demanded action is completed, it chooses another device to be the master and the loop continues.
+
+This mode is functionally very similar to the Randomly Generated Sequence(#3--Randomly-Generated-Sequence)... Therefore, maybe it shouldn't even be implemented.
