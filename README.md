@@ -16,7 +16,7 @@
   - [Connections](#connections)
 - [Operating Modes](#operating-modes)
   - [1- Solo](#1--solo)
-  - [2- Radio Controlled](2--radio-controlled)
+  - [2- Radio Controlled](2-radio-controlled)
   - [3- Randomly Generated Sequence](3--randomly-generated-sequence)
   - [4- Autonomous Random Selection](4--autonomous-random-selection)
 <br>
