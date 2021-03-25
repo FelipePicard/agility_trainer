@@ -13,7 +13,9 @@
   - [list of components](#List-of-Components)
   - [schematic](#Schematic)
   - [connections](#Connections)
-- [operating modes](#operating modes)
+- [operating modes](#operating-modes)
+<br>
+<br>
 
 ## description
 
@@ -22,6 +24,8 @@ This project was based on [this kind of device.](https://www.youtube.com/watch?v
 Agility trainers are small wirelessly communicating devices that shine lights in sequence. Depending on the color of the light, the user must do an action. Once the action is completed, the current device changes color and a new device gets a new color as well to indicate to the user what action he/she must do.
 
 Colors can be changed randomly and autonomously by the devices themselves, or they can be preprogrammed as a sequence of which device and which color should be picked at each time or a person with a remote can choose the device and color.
+<br>
+<br>
 
 
 ## construction
@@ -62,5 +66,7 @@ _yes, i made this using paint_
 
 #### IMPORTANT:
 As of today, the circuit used for this project isn't optimized at all. For example, each pin of the RGB LEDs should have a resistor, instead of only one being connected between the cathode and GND. The resistor in the buzzer can also be changed and maybe the buzzer could be controlled with a transistor to make it louder. If many RGB LEDs are used, it is also a good idea to drive it with a transistor. Feel free to adapt everything suggested here.
+<br>
+<br>
 
 ## operating modes
