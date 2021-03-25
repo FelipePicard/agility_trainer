@@ -26,7 +26,7 @@ Agility trainers are small wirelessly communicating devices that shine lights in
 Colors can be changed randomly and autonomously by the devices themselves, or they can be preprogrammed as a sequence of which device and which color should be picked at each time or a person with a remote can choose the device and color.
 <br>
 <br>
-
+<br>
 
 ## construction
 
@@ -38,6 +38,7 @@ Each device is comprised of an [RF-NANO](https://www.embeddedcomputing.com/techn
 * [RGB LEDs (common cathode)](https://www.banggood.com/50pcs-LED-RGB-Common-Cathode-4-Pin-F5-5MM-Diode-p-1016398.html?cur_warehouse=CN&rmmds=search)
 * [Resistor Kit](https://www.banggood.com/560-Pcs-1-ohm-to-10M-ohm-1-or-4W-5-pencent-Metal-Film-Resistor-56-Value-Assorted-Kit-p-1072159.html?cur_warehouse=CN&rmmds=search) (we only need 1x10K, 1x1K and 2x200R)
 <br>
+<br>
 
 #### Schematic:
 
@@ -47,7 +48,8 @@ Each device is comprised of an [RF-NANO](https://www.embeddedcomputing.com/techn
 
 
 _yes, i made this using paint_
-
+<br>
+<br>
 
 #### Connections:
 - RGB LED
@@ -63,9 +65,12 @@ _yes, i made this using paint_
 - Buzzer
   - one pin - GND
   - other pin - 200R resistor going to A3
+<br>
+<br>
 
 #### IMPORTANT:
 As of today, the circuit used for this project isn't optimized at all. For example, each pin of the RGB LEDs should have a resistor, instead of only one being connected between the cathode and GND. The resistor in the buzzer can also be changed and maybe the buzzer could be controlled with a transistor to make it louder. If many RGB LEDs are used, it is also a good idea to drive it with a transistor. Feel free to adapt everything suggested here.
+<br>
 <br>
 <br>
 
