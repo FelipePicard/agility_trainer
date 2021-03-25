@@ -31,5 +31,22 @@ Each device is comprised of an [RF-NANO](https://www.embeddedcomputing.com/techn
 <p align="center">
   <img src="https://user-images.githubusercontent.com/44078452/112412309-13b25180-8cfd-11eb-9256-f0600568e850.png" />
 </p>
+_yes, i made this using paint_
+
+##### connections:
+- RGB LED
+  - redPin - D3
+  - greenPin - D5
+  - bluePin - D6
+  - RGB LED's cathode - 1K resistor to GND
+- IR Sensor (better to just follow the image)
+  - black diode's annode - 5V
+  - blue diode's annode - 5V
+  - black diode's cathode - A6 and 10K resistor to GND
+  - blue diode's cathode - 200R resistor to GND
+- Buzzer
+  - one pin - GND
+  - other pin - 200R resistor going to A3
+
 
 ## operating modes
