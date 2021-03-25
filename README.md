@@ -35,7 +35,7 @@ Colors can be changed randomly and autonomously by the devices themselves, or th
 
 ## Working Principle
 
-Each device is comprised of an [RF-NANO](https://www.embeddedcomputing.com/technology/processing/for-the-professional-maker-getting-started-with-the-rf-nano-arduino-nrf24l01-combo) micro controller (based on the [Arduino Nano](https://www.arduino.cc/en/pmwiki.php?n=Main/ArduinoBoardNano)), which has an on board nRF24L01, capable of wireless communication, in addition, they also have an IR proximity sensor and at least one RGB LED. Optionally, you can add a buzzer to make sounds.
+Each device is comprised of an [RF-NANO](https://www.embeddedcomputing.com/technology/processing/for-the-professional-maker-getting-started-with-the-rf-nano-arduino-nrf24l01-combo) micro controller (based on the [Arduino Nano](https://www.arduino.cc/en/pmwiki.php?n=Main/ArduinoBoardNano)), which has an on board nRF24L01 wireless transceiver, capable of wireless communication, in addition, they also have an IR proximity sensor and at least one RGB LED. Optionally, you can add a buzzer to make sounds.
 
 Initially, all devices are in idle mode, with a static color (in my case, magenta). Once one of the devices changes color, the user must take the corresponding action. Each action can have a different feedback (i.e.: time since the color changed, the user touching the device or a radio signal). Once the feedback is returned, the device sends a wireless signal to the others, telling them that the action was completed. This signal can also contain the next device to be activated and with which color. The cycle repeats.
 
