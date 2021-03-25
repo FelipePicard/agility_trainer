@@ -100,6 +100,9 @@ It is important to change the `device_number` to your device's number. For examp
 <p align="center">
   <img src="https://user-images.githubusercontent.com/44078452/112419179-b40e7300-8d09-11eb-8171-e15e9aec2ec9.gif" alt="animated" />
 </p>
+<br>
+<br>
+
 ### 3- Randomly Generated Sequence
 
 ### 4- Autonomous Random Selection
