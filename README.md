@@ -10,7 +10,7 @@
 
 - [description](#description)
 - [construction](#construction)
-  - [list of components](#List of Components)
+  - [list of components](#List-of-Components)
   - [schematic](#Schematic)
   - [connections](#Connections)
 - [operating modes](#operating modes)
