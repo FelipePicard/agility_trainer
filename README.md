@@ -6,18 +6,22 @@
 </p>
 <br>
 
-## table of contents
+## Table of Contents
 
-- [description](#description)
-- [construction](#construction)
-  - [list of components](#List-of-Components)
-  - [schematic](#Schematic)
-  - [connections](#Connections)
-- [operating modes](#operating-modes)
+- [Description](#Description)
+- [Construction](#Construction)
+  - [List of Components](#List-of-Components)
+  - [Schematic](#Schematic)
+  - [Connections](#Connections)
+- [Operating Modes](#Operating-Modes)
+  - [1- Solo](#1--Solo)
+  - [2- Radio Controlled](2--Radio-Controlled)
+  - [3- Randomly Generated Sequence](3--Randomly-Generated-Sequence)
+  - [4- Autonomous Random Selection](4--Autonomous-Random-Selection)
 <br>
 <br>
 
-## description
+## Description
 
 This project was based on [this kind of device.](https://www.youtube.com/watch?v=AvRM1_2BJDQ)
 
@@ -28,7 +32,7 @@ Colors can be changed randomly and autonomously by the devices themselves, or th
 <br>
 <br>
 
-## construction
+## Construction
 
 Each device is comprised of an [RF-NANO](https://www.embeddedcomputing.com/technology/processing/for-the-professional-maker-getting-started-with-the-rf-nano-arduino-nrf24l01-combo) micro controller (based on the [Arduino Nano](https://www.arduino.cc/en/pmwiki.php?n=Main/ArduinoBoardNano)), which has an on board nRF24L01, capable of wireless communication, in addition, they also have an IR proximity sensor and at least one RGB LED. Optionally, you can add a buzzer to make sounds.
 
@@ -74,4 +78,12 @@ As of today, the circuit used for this project isn't optimized at all. For examp
 <br>
 <br>
 
-## operating modes
+## Operating Modes
+
+### 1- Solo
+
+### 2- Radio Controlled
+
+### 3- Randomly Generated Sequence
+
+### 4- Autonomous Random Selection
