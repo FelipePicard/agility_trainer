@@ -6,6 +6,15 @@
 </p>
 <br>
 
+## table of contents
+
+- [description](#description)
+- [construction](#construction)
+  - [list of components](#List of Components)
+  - [schematic](#Schematic)
+  - [connections](#Connections)
+- [operating modes](#operating modes)
+
 ## description
 
 This project was based on [this kind of device.](https://www.youtube.com/watch?v=AvRM1_2BJDQ)
